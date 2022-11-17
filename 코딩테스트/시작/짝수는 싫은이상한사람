@@ -20,3 +20,20 @@ class Solution {
         return answer;
     }
 }
+
+ 짝수의 합 구하기 입니다.
+ 
+ 
+class Solution {
+    public int solution(int n) {
+        int answer = 0;
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0)
+            answer += loop;
+        }
+        return answer;
+    }
+}
+
+n % 2 == 0 은 생각보다 많이 쓰이므로 알아야 합니다. (짝수, 홀수 판별)

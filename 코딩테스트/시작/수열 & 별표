@@ -1,0 +1,80 @@
+아래 수열의 결과값을 구하는 프로그램을 작성하시오.
+ * 1 - 2 + 3 - 4 + 5 - ..... + 99 - 100 = ? 
+ * 패턴 : 홀수는 + , 짝수는  -
+ 
+ package study;
+
+public class study4 {
+	
+		public static void main(String[] args) {
+			
+			/*
+			 * 아래 수열의 결과값을 구하는 프로그램을 작성하시오.
+			 * 1 - 2 + 3 - 4 + 5 - ..... + 99 - 100 = ?
+			 * 패턴 : 홀수는 + , 짝수는  -
+			 * */
+
+			int sum =0;
+			
+			for(int i=0; i<=100; i++) {
+				if(i%2 !=0) {
+					sum +=i;
+				}else {
+					sum -=i;
+				}
+			}
+			System.out.println("Result : " + sum);
+		}
+}
+
+// 1에서 100까지 수열의 합을 구해보자!
+			
+			int sum1, number;
+			
+			number = 0; 
+			sum1 = 0;
+			
+			do {
+				number++;
+				sum1 += number;
+			}while(number <= 99);
+			
+			System.out.println(sum1);
+
+ 
+package study;
+
+public class study5 {
+	
+		public static void main(String[] args) {
+			
+			/*
+			 * 삼각형 별모양
+			 * 
+			 * */
+			
+			for(int i=1;i<5;i++){
+				for(int j=0;j<i;j++){
+					System.out.print("*");
+				}
+				System.out.println("");
+			}
+			
+			/*
+			 * 피라미드 모양의 별찍기
+			 * 
+			 * */
+			for(int i=0;i<4;i++){
+				for(int j=0;j<3-i;j++){
+					System.out.print(" "); 
+				}
+				for(int j=0;j<2*i+1;j++){
+					System.out.print("*"); 
+				}
+				System.out.println("");
+			} 
+	}
+}
+
+
+
